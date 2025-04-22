@@ -35,6 +35,12 @@ const Dashboard = () => {
     <div className="dashboard">
       <header className="dashboard-header">
         <h1>Movie Collection</h1>
+        <button
+          className="add-movie-button"
+          onClick={() => navigate('/add-movie')}
+        >
+          Add Movie
+        </button>
       </header>
       <div className="movie-list">
         {movies.map((movie) => (
